@@ -1,17 +1,152 @@
-/* Error: Undefined variable.
- *     ,
- * 109 |     color: $clr-heading-light;
- *     |            ^^^^^^^^^^^^^^^^^^
- *     '
- *   scss\input.scss 109:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 109 \2502      color: $clr-heading-light;\d\a     \2502             ^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\input.scss 109:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Exo", sans-serif;
+}
+
+h1 {
+  font: 6rem/7.5rem "Exo", sans-serif;
+  margin: 0 0 40px;
+  font-weight: 200;
+  color: #282828;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: 4rem/5rem "Exo", sans-serif;
+  margin: 0 0 40px;
+  font-weight: 500;
+  color: #282828;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: 2.2rem/3.5rem "Exo", sans-serif;
+  margin: 0 0 15px;
+  font-weight: 500;
+  color: #282828;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font: 1.8rem/3rem "Exo", sans-serif;
+  margin: 0 0 25px;
+  font-weight: 500;
+  color: #282828;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h4.footer-heading {
+  font: 1.8rem/2.5rem "Exo", sans-serif;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font: 1.4rem/2.4rem "Exo", sans-serif;
+  margin: 0 0 25px;
+  font-weight: 400;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font: 1.4rem/2.4rem "Exo", sans-serif;
+  margin: 0 0 25px;
+  font-weight: 400;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  justify-content: center;
+}
+.row-wrapper.small-gap {
+  margin-left: -30px;
+}
+.row-wrapper.small-gap > div[class^=col] {
+  padding-left: 30px;
+}
+.row-wrapper.no-gap {
+  margin-left: 0px;
+}
+.row-wrapper.no-gap > div[class^=col] {
+  padding-left: 0px;
+}
+
+.col-1-3 {
+  padding-left: 60px;
+  width: calc(100% / 3);
+  margin-bottom: 30px;
+}
+@media (max-width: 720px) {
+  .col-1-3 {
+    width: 100%;
+  }
+}
+
+.col-1-4 {
+  padding-left: 60px;
+  width: 25%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .col-1-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .col-1-4 {
+    width: 100%;
+  }
+}
+
+.col-1-5 {
+  padding-left: 60px;
+  width: 20%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .col-1-5 {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 480px) {
+  .col-1-5 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
