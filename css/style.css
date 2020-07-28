@@ -1,25 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *     ,
+ * 109 |     color: $clr-heading-light;
+ *     |            ^^^^^^^^^^^^^^^^^^
+ *     '
+ *   scss\input.scss 109:9  root stylesheet */
 
-html {
-  font-size: 62.5%;
-  height: 100%;
-  scroll-behavior: smooth;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 109 \2502      color: $clr-heading-light;\d\a     \2502             ^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\input.scss 109:9  root stylesheet";
 }
-
-body {
-  position: relative;
-  z-index: 1;
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-family: "Exo", sans-serif;
-}
-
-/*# sourceMappingURL=style.css.map */

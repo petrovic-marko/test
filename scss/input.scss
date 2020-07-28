@@ -5,16 +5,17 @@
 $font-family-global: 'Exo', sans-serif;
 
 
-$clr-text-global: #282828;
+$clr-text-global: #282828; // text-on-light-bg
 
 $clr-main: #ff6d6d; // .btn, .lead
 $clr-main-lighter-1: #fb8686; // section.intro
 $clr-main-lighter-2: #ff8a8a; // section.design, footer
 
 
-$clr-white: #ffffff;
-$clr-bg-light: #f6f5f3;
-
+$clr-white: #ffffff; // section.intro, section.design, footer, text-on-dark-bg
+$clr-grey: #ececec; // section.intro
+$clr-bg-light: #f6f5f3; // section.features, section.outro
+$clr-bg-blue: #323969; // section.contact
 
 
 
@@ -46,4 +47,96 @@ body {
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-family: $font-family-global;
+}
+
+// TYPOGRAPHY
+
+h1 {
+	font: 6rem/7.5rem $font-family-global;
+	margin: 0 0 40px;
+	font-weight: 200;
+	color: $clr-text-global;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+}
+
+h2 {
+	font: 4rem/5rem $font-family-global;
+	margin: 0 0 40px;
+	font-weight: 500;
+	color: $clr-text-global;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+}
+
+h3 {
+	font: 2.2rem/3.5rem $font-family-global;
+	margin: 0 0 35px;
+	font-weight: 500;
+	color: $clr-text-global;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+}
+
+h4 {
+	font: 1.8rem/3rem $font-family-global;
+	margin: 0 0 25px;
+	font-weight: 400;
+	color: $clr-heading-light;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	&.footer-heading {
+		font: 1.8rem/2.5rem $font-family-global;
+		letter-spacing: 2px;
+	}
+}
+
+h5 {
+	font: 1.4rem/2.4rem $font-family-global;
+	margin: 0 0 25px;
+	font-weight: 400;
+	color: #ccc;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h6 {
+	font: 1.4rem/2.4rem $font-family-global;
+	margin: 0 0 25px;
+	font-weight: 400;
+	color: #ccc;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
