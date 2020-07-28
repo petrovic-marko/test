@@ -1,0 +1,49 @@
+
+
+
+
+$font-family-global: 'Exo', sans-serif;
+
+
+$clr-text-global: #282828;
+
+$clr-main: #ff6d6d; // .btn, .lead
+$clr-main-lighter-1: #fb8686; // section.intro
+$clr-main-lighter-2: #ff8a8a; // section.design, footer
+
+
+$clr-white: #ffffff;
+$clr-bg-light: #f6f5f3;
+
+
+
+
+
+// GENERAL STYLES
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	z-index: 1;
+	
+	
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+
+	// font
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-family: $font-family-global;
+}
