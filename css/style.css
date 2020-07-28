@@ -149,4 +149,44 @@ h6 {
   }
 }
 
+.intro {
+  position: relative;
+  display: flex;
+  border: 1px solid black;
+  padding: 100px 0;
+}
+.intro .text__wrapper {
+  width: 70%;
+}
+.intro span {
+  color: #ff6d6d;
+  text-transform: uppercase;
+}
+.intro p {
+  padding: 0 20px 0 0px;
+}
+.intro .intro__image {
+  position: relative;
+  width: 100%;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ececec;
+  top: 0;
+  left: 70%;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fb8686;
+  top: 0;
+  left: 98.7%;
+  transform: skew(-50deg);
+}
+
 /*# sourceMappingURL=style.css.map */
