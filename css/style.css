@@ -5,6 +5,9 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -77,6 +80,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 p, ul, ol, dl, table, hr, pre, blockquote {
   margin: 0 0 25px;
   line-height: 2.6rem;
@@ -112,6 +119,7 @@ textarea {
 
 section {
   padding: 170px 0px;
+  overflow: hidden;
 }
 
 .container {
@@ -187,21 +195,89 @@ section {
   display: inline-block;
   min-width: 190px;
   padding: 12px 24px;
+  margin-bottom: 15px;
   text-align: center;
   color: #ffffff;
   background-color: #ff6d6d;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
 }
 .btn:active, .btn:hover, .btn:visited {
   color: #ffffff;
+}
+
+.site-header {
+  min-height: 100vh;
+  background-color: transparent;
+  position: relative;
+}
+.site-header .showcase-wrapper, .site-header .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.site-header .showcase-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.site-header .showcase-wrapper .showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-header .showcase-wrapper .showcase-content .video-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  overflow: none;
+  margin-bottom: 40px;
+}
+.site-header .showcase-wrapper .showcase-content .video-btn-img {
+  width: 60px;
+  height: 60px;
+}
+.site-header .showcase-wrapper .showcase-content .info {
+  font-size: 14px;
+}
+.site-header .video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+.site-header .video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .intro {
   position: relative;
 }
 .intro .form-wrapper {
-  padding: 100px 0;
   width: 70%;
 }
 .intro .text__wrapper {

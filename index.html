@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/75cac14856.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
 	<title>Document</title>
@@ -9,17 +10,39 @@
 <body>
 
 	<!-- HEADER -->
-	<header>
-	<!-- video bg -->
-	<!-- min-height:100vh; -->
-	<!-- padding:140px 0; -->
-		<div class="showcase-wrapper">
-		<!-- padding:70px 0; -->
-			<h1>There are no other platforms for you as like</h1>
-			
-			<a href="#" class="btn btn-action">hello</a>
-			<p>No need to add card details</p>
-		</div>
+	<header class="site-header">
+		
+			<!-- video bg -->
+			<!-- min-height:100vh; -->
+			<!-- padding:140px 0; -->
+				<div class="showcase-wrapper">
+				<!-- padding:70px 0; -->
+					<div class="container">
+						<div class="showcase-content">
+							<h1>There are no other platforms for you as like</h1>
+							<div id="video-btn" class="video-btn" onclick="videoFunction()">
+								<!-- <img src="img/video-btn.png" class="video-btn-img" alt=""> -->
+								<img src="img/play.png" class="video-btn-img" id="video-btn-play" alt="">
+								<img src="img/pause.png" class="video-btn-img" id="video-btn-pause" alt="">
+							</div>
+							<a href="#" class="btn btn-action">hello</a>
+							<p class="info">* No need to add card details</p>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="video-wrap">
+	        <video
+	          id="video-bg"
+	          src="video/video2.mp4"
+	          preload="auto"
+	          
+	          loop="loop"
+	          muted="muted"
+	        ></video>
+	      </div>
+		
 	</header>
 
 
@@ -81,6 +104,9 @@
 	<footer class="footer">
 		<!--  -->
 	</footer>
+
+
+	<script src="js/script.js"></script>
 
 
 </body>
