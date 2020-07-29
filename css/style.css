@@ -312,4 +312,39 @@ section {
   color: #ff6d6d;
 }
 
+.members {
+  text-align: center;
+}
+.members .member-box .member-photo {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+.members .member-box .member-name {
+  margin-top: 25px;
+  color: #fff;
+  margin-bottom: 1px;
+  text-transform: capitalize;
+}
+.members .member-box .member-title {
+  color: #ff6d6d;
+  padding-bottom: 55px;
+  text-transform: capitalize;
+}
+.members .member-box .quote {
+  color: #b3b4b6;
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 26px;
+  margin: 40px 0;
+}
+.members .firm-wrapper {
+  height: 100px;
+}
+.members .firm-logo {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*# sourceMappingURL=style.css.map */
