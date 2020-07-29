@@ -346,6 +346,7 @@ section {
      padding-top: 115px;
      padding-bottom: 135px;
      background-color: #f6f5f3;
+     overflow: hidden;
 
      .features-header {
      	padding-top: 50px;
@@ -379,7 +380,28 @@ section {
      	}
      }
 
+     .features-image {
+     	.earphones {
+     		position: absolute;
+     		top: -10px;
+     		right: 135px;
+     	}
+
+     	.penholder {
+     		position: absolute;
+     		top: -30px;
+     		left: 215px;
+     	}
+     	.coffeecup {
+     		position: absolute;
+     		right: 90px;
+     		bottom: -150px;
+     	}
+     }
+
 }
+
+
 .design{
 	padding: 100px 0;
 	display: flex;
