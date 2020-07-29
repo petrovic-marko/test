@@ -234,6 +234,40 @@ section {
   transform-origin: left bottom;
 }
 
+<<<<<<< HEAD
+.features {
+  background-image: url(img/features.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f6f5f3;
+}
+.features .features-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.features .features-header .lead-text {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: #ff6d6d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.features .row-wrapper img {
+  display: block;
+  margin: 0 auto 20px;
+}
+.features .row-wrapper h3 {
+  text-align: center;
+}
+.features .row-wrapper p {
+  text-align: center;
+=======
 .design {
   padding: 100px 0;
   display: flex;
@@ -268,6 +302,7 @@ section {
 }
 .design .design-content span {
   color: #ff6d6d;
+>>>>>>> 78bbf1ee8cff5c52d08ae66ee86763a8d572fe8f
 }
 
 /*# sourceMappingURL=style.css.map */
