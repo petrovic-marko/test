@@ -20,7 +20,7 @@ $clr-bg-blue: #323969; // section.contact
 $clr-input-bg: #464c77; // input:not([type="submit"])-bg
 
 
-
+   
 
 // GENERAL STYLES
 
@@ -339,13 +339,12 @@ section {
 }
 
 .features {
-     background-image: url(img/features.png);
      background-size: cover;
      background-position: center center;
      position: relative;
      align-items: center;
-     padding-top: 100px;
-     padding-bottom: 100px;
+     padding-top: 115px;
+     padding-bottom: 135px;
      background-color: #f6f5f3;
 
      .features-header {
