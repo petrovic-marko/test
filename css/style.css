@@ -184,4 +184,38 @@ h6 {
   transform-origin: left bottom;
 }
 
+.features {
+  background-image: url(img/features.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f6f5f3;
+}
+.features .features-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.features .features-header .lead-text {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: #ff6d6d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.features .row-wrapper img {
+  display: block;
+  margin: 0 auto 20px;
+}
+.features .row-wrapper h3 {
+  text-align: center;
+}
+.features .row-wrapper p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
