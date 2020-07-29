@@ -215,6 +215,14 @@ section {
 .intro .text__wrapper {
   padding-right: 170px;
 }
+.intro .lead-text {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: #ff6d6d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .intro .section-image {
   position: absolute;
   width: 100%;
@@ -234,7 +242,6 @@ section {
   transform-origin: left bottom;
 }
 
-<<<<<<< HEAD
 .features {
   background-image: url(img/features.png);
   background-size: cover;
@@ -267,7 +274,8 @@ section {
 }
 .features .row-wrapper p {
   text-align: center;
-=======
+}
+
 .design {
   padding: 100px 0;
   display: flex;
@@ -302,7 +310,6 @@ section {
 }
 .design .design-content span {
   color: #ff6d6d;
->>>>>>> 78bbf1ee8cff5c52d08ae66ee86763a8d572fe8f
 }
 
 /*# sourceMappingURL=style.css.map */
