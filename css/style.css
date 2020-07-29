@@ -439,4 +439,17 @@ section {
   background-position: center;
 }
 
+.contact .section-heading {
+  text-align: center;
+}
+.contact .section-heading h2 {
+  color: #ffffff;
+}
+.contact .form-input {
+  margin-left: 20px;
+}
+.contact .col-1-4 {
+  width: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
