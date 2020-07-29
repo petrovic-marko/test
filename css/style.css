@@ -476,6 +476,10 @@ section {
   align-items: center;
   text-align: center;
   padding-bottom: 0px;
+  padding-top: 100px;
+}
+.browser p {
+  padding: 10px 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
