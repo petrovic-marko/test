@@ -30,7 +30,7 @@ $clr-bg-blue: #323969; // section.contact
 
 html {
 	font-size: 62.5%;
-	height: 100%;
+	// height: 100%;
 	scroll-behavior: smooth;
 }
 
@@ -74,7 +74,7 @@ h2 {
 	font-weight: 500;
 	color: $clr-text-global;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	// @media (max-width: $breakpoint-large) {
 	// 	font-size: ;
 	// 	line-height: ;
@@ -145,8 +145,8 @@ h6 {
 // UTILITY CLASS' STYLES
 
 .container {
-	width: 100%;
 	max-width: 1170px;
+	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -213,41 +213,42 @@ h6 {
 
 .intro{
 	position: relative;
-	display: flex;
-	.text__wrapper{
-		width: 70%;
+	.form-wrapper{
+	padding: 170px 0;
+	width: 70%;
+	
+
+
 	}
-	border: 1px solid black;
-	padding: 100px 0;
+	.text__wrapper{
+		padding-right: 170px;
+	}
+	
 	span{
+		font-size: 16px;
+		letter-spacing: 3px;
+		line-height: 50px;
 		color: #ff6d6d;
 		text-transform: uppercase;
+		font-weight: bold;
 	}
-	p{
-		padding: 0 20px 0 0px;
-	}
-	.intro__image{
-		position: relative;
-		width: 100%;
-	}
-	&::before {
-		content: "";
+	
+	.section-image{
 		position: absolute;
-		height: 100%;
 		width: 100%;
-		background-color: #ececec;
+		height: 100%;
 		top: 0;
 		left: 70%;
+		overflow: hidden;
+			&::after {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 2000px;
+			background-color: $clr-main-lighter-1;
+			top: 0;
+			left: 31.3%;
+			transform:skewX(-50deg);
+		}
 	}
-	&::after {
-		content: "";
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: #fb8686;
-		top: 0;
-		left: 98.7%;
-		transform: skew(-50deg);
-	}
-
 }
