@@ -159,7 +159,7 @@ form {
 }
 
 input, textarea, select {
-	// 
+	outline: none;
 }
 
 input, 
@@ -562,17 +562,29 @@ section {
 }
 
 .contact{
+	padding: 90px 0;
+	position: relative;
 	.section-heading{
 		text-align: center;
 		h2{
 			color:#ffffff;
+			margin-bottom: 100px;
 		}
+	}
+	.contact-wrapper{
+		margin-bottom: 0;
 	}
 	.form-input{
 		margin-left: 20px;
 	}
 	.col-1-4{
 		width: 20%;
+	}
+	.trial{
+		position:absolute;
+		top: 48%;
+		right: 20%;
+		color: #ffffff;
 	}
 }
 
