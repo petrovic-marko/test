@@ -27,7 +27,6 @@ h1 {
   font-weight: 200;
   color: #282828;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -44,7 +43,6 @@ h3 {
   font-weight: 500;
   color: #282828;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -53,7 +51,6 @@ h4 {
   font-weight: 500;
   color: #282828;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 h4.footer-heading {
   font: 1.8rem/2.5rem "Exo", sans-serif;
@@ -66,7 +63,6 @@ h5 {
   font-weight: 400;
   color: #ccc;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 h6 {
@@ -75,7 +71,47 @@ h6 {
   font-weight: 400;
   color: #ccc;
   letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+  margin: 0 0 25px;
+  line-height: 2.6rem;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+input,
+textarea {
+  font-size: 1.6rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f6f5f3;
+  padding: 15px 25px;
+  border: none;
+}
+
+input:not([type=submit]),
+textarea {
+  background-color: #464c77;
+}
+
+input[type=submit] {
+  background-color: #ff6d6d;
+  font-size: 1.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  padding: 170px 0px;
 }
 
 .container {
@@ -156,6 +192,20 @@ h6 {
   font-weight: bold;
 }
 
+.btn {
+  display: inline-block;
+  min-width: 190px;
+  padding: 12px 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff6d6d;
+  text-transform: uppercase;
+  border: none;
+}
+.btn:active, .btn:hover, .btn:visited {
+  color: #ffffff;
+}
+
 .intro {
   position: relative;
 }
@@ -208,7 +258,7 @@ h6 {
   top: 50%;
   left: -100%;
   background-color: #fb8686;
-  transform: rotate(50deg);
+  transform: rotate(50deg); 
 }
 
 /*# sourceMappingURL=style.css.map */

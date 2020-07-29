@@ -15,7 +15,9 @@ $clr-main-lighter-2: #ff8a8a; // section.design, footer
 $clr-white: #ffffff; // section.intro, section.design, footer, text-on-dark-bg
 $clr-grey: #ececec; // section.intro
 $clr-bg-light: #f6f5f3; // section.features, section.outro
+
 $clr-bg-blue: #323969; // section.contact
+$clr-input-bg: #464c77; // input:not([type="submit"])-bg
 
 
 
@@ -57,7 +59,6 @@ h1 {
 	font-weight: 200;
 	color: $clr-text-global;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 	// @media (max-width: $breakpoint-large) {
 	// 	font-size: ;
 	// 	line-height: ;
@@ -74,7 +75,6 @@ h2 {
 	font-weight: 500;
 	color: $clr-text-global;
 	letter-spacing: 2px;
-	// text-transform: uppercase;
 	// @media (max-width: $breakpoint-large) {
 	// 	font-size: ;
 	// 	line-height: ;
@@ -91,7 +91,6 @@ h3 {
 	font-weight: 500;
 	color: $clr-text-global;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	// @media (max-width: $breakpoint-large) {
 	// 	font-size: ;
 	// 	line-height: ;
@@ -108,7 +107,6 @@ h4 {
 	font-weight: 500;
 	color: $clr-text-global;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	// @media (max-width: $breakpoint-large) {
 	// 	font-size: ;
 	// 	line-height: ;
@@ -129,7 +127,6 @@ h5 {
 	font-weight: 400;
 	color: #ccc;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 h6 {
@@ -138,7 +135,66 @@ h6 {
 	font-weight: 400;
 	color: #ccc;
 	letter-spacing: 1px;
+}
+
+
+ul {
+	list-style: none;
+}
+
+// a {
+// 	color: $clr-white;
+// 	text-decoration: none;
+// 	font-weight: 400;
+// 	&:active,
+// 	&:hover,
+// 	&:visited {
+// 		color: $clr-white;
+// 	}
+// }
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+	margin: 0 0 25px;
+	line-height: 2.6rem;
+}
+
+form {
+	margin-bottom: 50px;
+}
+
+input, textarea, select {
+	// 
+}
+
+input, 
+textarea {
+	font-size: 1.6rem;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $clr-bg-light;
+	padding: 15px 25px;
+	border: none;
+}
+
+input:not([type="submit"]),
+textarea {
+	background-color: $clr-input-bg;
+}
+
+input[type="submit"] {
+	background-color: $clr-main;
+	font-size: 1.5rem;
+}
+
+textarea {
+	resize: none;
+}
+
+section {
+	padding: 170px 0px;
+	// @media (max-width: $breakpoint-large) {
+	// 	padding: ;
+	// }
 }
 
 
@@ -163,7 +219,7 @@ h6 {
 	&.small-gap {
 	  	margin-left: -30px;
 
-			& > div[class^="col"] {
+			& > div[class^="col"] { 
 				padding-left: 30px;
 			}
   	}
@@ -218,6 +274,29 @@ h6 {
 		text-transform: uppercase;
 		font-weight: bold;
 	}
+
+.btn {
+	display: inline-block;
+	min-width: 190px;
+	// min-height: 50px;
+	padding: 12px 24px;
+	text-align: center;
+	color: $clr-white;
+	background-color: $clr-main;
+	text-transform: uppercase;
+	border: none;
+
+	&:active,
+	&:hover,
+	&:visited {
+		color: $clr-white;
+	}
+}
+
+
+
+
+// SITE STYLES
 
 .intro{
 	position: relative;
