@@ -456,7 +456,7 @@ section {
          text-align: center;
          }
 
-         	p {
+         p {
      		text-align: center;
      	}
      }
@@ -466,17 +466,35 @@ section {
      		position: absolute;
      		top: -10px;
      		right: 135px;
+     		@media (max-width: 1200px) {
+	        right: 60px;
+	}
+			@media (max-width: 768px) {
+	        right: 50px;
+	}
      	}
 
      	.penholder {
      		position: absolute;
      		top: -30px;
      		left: 215px;
+     		@media (max-width: 1200px) {
+		    left: 0px;
+	}
+			@media (max-width: 768px) {
+	        right: 60px;
+	}
      	}
      	.coffeecup {
      		position: absolute;
      		right: 90px;
      		bottom: -150px;
+     		@media (max-width: 1200px) {
+		    right: 90px;
+	}
+			@media (max-width: 768px) {
+	        right: 180px;
+	}
      	}
      }
 
