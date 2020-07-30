@@ -44,7 +44,7 @@ body {
 	z-index: 1;
 	
 	
-	overflow-x: hidden; /* Hide horizontal scrollbar */
+	// overflow-x: hidden; /* Hide horizontal scrollbar */
 
 	// font
 	font-size: 1.6rem;
@@ -188,7 +188,7 @@ textarea {
 
 section {
 	padding: 170px 0px;
-	overflow: hidden;
+	// overflow: hidden;
 	// @media (max-width: $breakpoint-large) {
 	// 	padding: ;
 	// }
@@ -382,10 +382,17 @@ section {
 .intro{
 	position: relative;
 	.form-wrapper{
-	width: 70%;
+	max-width: 70%;
+	@media (max-width: 768px){
+		max-width: 100%;
+	}
+
 	}
 	.text__wrapper{
 		padding-right: 170px;
+		@media (max-width: 768px){
+			padding: 0;
+		}
 	}
 	
 	.lead-text{
@@ -406,6 +413,7 @@ section {
 		top: 0%;
 		left: 57%;
 		overflow: hidden;
+		background-color: #ececec;
 		.rectangle{
 			position: absolute;
 			height: 2000px;
@@ -415,6 +423,20 @@ section {
 			bottom: 0;
 			transform: rotate(56deg);
 			transform-origin: left bottom;
+			@media (max-width: 768px){
+				width: 110%;
+				height: 110%;
+				left: -55%;
+				bottom: 50%;
+				transform: rotate(90deg);
+				z-index: -1;
+			}
+
+		}
+		@media (max-width: 768px){
+			background-color: transparent;
+			overflow: visible;
+
 		}
 	}
 }
