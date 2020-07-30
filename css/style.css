@@ -466,18 +466,19 @@ section {
 }
 .design .design-image-rectangle {
   position: absolute;
-  top: -1198%;
-  right: 792%;
-  width: 2000%;
+  top: 0;
+  left: -213%;
+  width: 200%;
   height: 2000%;
   background-color: #fb8686;
-  transform: rotate(-48deg);
-  transform-origin: top right;
+  transform: rotate(-37deg);
+  transform-origin: top left;
   z-index: -1;
 }
 @media (max-width: 768px) {
   .design .design-image-rectangle {
-    top: 50%;
+    top: 210%;
+    transform: rotate(-51deg);
   }
 }
 .design .design-content {
@@ -583,7 +584,7 @@ section {
 }
 @media (max-width: 1320px) {
   .contact .trial {
-    top: 69px;
+    top: 66px;
   }
 }
 .contact .terms {
