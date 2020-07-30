@@ -699,6 +699,10 @@ section {
     @media (max-width: 768px) {
 	      padding: 10px 50px;
 	}
+	  @media (max-width: 375px) {
+	      padding: 0px;
+	}
+
     }
 
     img {

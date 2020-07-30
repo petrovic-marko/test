@@ -602,6 +602,11 @@ section {
     padding: 10px 50px;
   }
 }
+@media (max-width: 375px) {
+  .browser p {
+    padding: 0px;
+  }
+}
 .browser img {
   max-width: 100%;
   max-height: 100%;
