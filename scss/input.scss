@@ -585,7 +585,31 @@ section {
 		position:absolute;
 		top: 48%;
 		right: 20%;
-		color: #ffffff;  
+		color: #ffffff;
+		padding-left: 30px;
+		&::after{
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			top: 60%;
+			left: 3%;
+			background-image: url(../img/arrow.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: 22;
+
+		}
+	}
+	.terms{
+		text-align: center;
+		a{
+			color: #f6f5f3;
+			
+		}
+		span{
+			text-decoration: underline;
+		}
 	}
 }
 
