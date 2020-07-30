@@ -517,12 +517,38 @@ section {
 .contact .col-1-4 {
   width: 20%;
 }
+@media (max-width: 1200px) {
+  .contact .col-1-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .contact .col-1-4 {
+    width: 60%;
+  }
+}
+@media (max-width: 375px) {
+  .contact .col-1-4 {
+    width: 70%;
+  }
+}
 .contact .trial {
   position: absolute;
   top: 48%;
   right: 20%;
   color: #ffffff;
   padding-left: 30px;
+}
+@media (max-width: 1200px) {
+  .contact .trial {
+    top: 66%;
+    right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .contact .trial {
+    top: 70%;
+  }
 }
 .contact .trial::after {
   position: absolute;

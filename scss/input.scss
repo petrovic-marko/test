@@ -618,6 +618,15 @@ section {
 	}
 	.col-1-4{
 		width: 20%;
+	@media (max-width: 1200px) {
+	        width: 50%;
+	}
+	@media (max-width: 768px) {
+	        width: 60%;
+	}
+	@media (max-width: 375px) {
+	       width: 70%;
+	}
 	}
 	.trial{
 		position:absolute;
@@ -625,6 +634,14 @@ section {
 		right: 20%;
 		color: #ffffff;
 		padding-left: 30px;
+		@media (max-width: 1200px) {
+	         top: 66%;
+	         right: 5%;
+	}
+
+	    @media (max-width: 768px) {
+	          top: 70%;
+	}
 		&::after{
 			position: absolute;
 			content: "";
