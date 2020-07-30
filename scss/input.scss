@@ -493,10 +493,13 @@ section {
 	        max-width: 150px;
 	}
 			@media (max-width: 768px) {
-	        right: 50px;
+	        right: 20px;
 	}
 		@media (max-width: 375px) {
 	        right: -22px;
+	}
+	@media (max-width: 300px) {
+	        display: none;
 	}
      	}   
 
@@ -555,7 +558,7 @@ section {
 		}
 	}
 
-
+ 
 
 	.design-image-rectangle{
 		// content: "";
@@ -706,6 +709,10 @@ section {
     @media (max-width: 768px) {
 	      padding: 10px 50px;
 	}
+	  @media (max-width: 375px) {
+	      padding: 0px;
+	}
+
     }
 
     img {
