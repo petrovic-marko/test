@@ -473,6 +473,7 @@ section {
 
          h3 {
          text-align: center;
+         padding: 10px;
          }
 
          p {
@@ -483,22 +484,31 @@ section {
      .features-image {
      	.earphones {
      		position: absolute;
+     		max-width: 100%;
+     		max-height: 100%;
      		top: -10px;
-     		right: 135px;
+     		right: 300px;
      		@media (max-width: 1200px) {
 	        right: 60px;
+	        max-width: 150px;
 	}
 			@media (max-width: 768px) {
 	        right: 50px;
+	}
+		@media (max-width: 375px) {
+	        right: -22px;
 	}
      	}   
 
      	.penholder {
      		position: absolute;
-     		top: -30px;
+     		top: -15px;
      		left: 215px;
+     		max-width: 100%;
+     		max-height: 100%;
      		@media (max-width: 1200px) {
 		    left: 0px;
+		    max-width: 200px;
 	}
 			@media (max-width: 768px) {
 	        right: 60px;
@@ -507,12 +517,15 @@ section {
      	.coffeecup {
      		position: absolute;
      		right: 90px;
-     		bottom: -150px;
+     		bottom: -135px;
+     		max-width: 100%;
+     		max-height: 100%;
      		@media (max-width: 1200px) {
 		    right: 90px;
+		    max-width: 200px;
 	}
 			@media (max-width: 768px) {
-	        right: 30%;
+	        right: 0%;
 	}
      	}
      }
@@ -618,6 +631,7 @@ section {
 	 
 }
 
+
 .contact{
 	padding: 90px 0;
 	position: relative;
@@ -654,7 +668,6 @@ section {
 			background-image: url(../img/arrow.png);
 			background-size: contain;
 			background-repeat: no-repeat;
-			// z-index: 22;
 		}
 	}
 	.terms{
@@ -668,6 +681,7 @@ section {
 		}
 	}
 }
+
 
 .browser {
 	background-color: #f6f5f3;
