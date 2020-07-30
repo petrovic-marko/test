@@ -466,13 +466,13 @@ section {
 }
 .design .design-image-rectangle {
   position: absolute;
-  top: 0;
-  left: -213%;
-  width: 200%;
+  top: -1198%;
+  right: 792%;
+  width: 2000%;
   height: 2000%;
   background-color: #fb8686;
-  transform: rotate(-32deg);
-  transform-origin: top left;
+  transform: rotate(-48deg);
+  transform-origin: top right;
   z-index: -1;
 }
 @media (max-width: 768px) {
@@ -547,8 +547,13 @@ section {
   color: #ffffff;
   margin-bottom: 100px;
 }
+.contact .contact-wrapper {
+  text-align: center;
+}
 .contact .submit {
   position: relative;
+  text-align: center;
+  margin: 0 auto;
 }
 .contact .form-submit {
   width: 244px;
@@ -570,6 +575,16 @@ section {
   background-image: url(../img/arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 1320px) {
+  .contact .trial::after {
+    display: none;
+  }
+}
+@media (max-width: 1320px) {
+  .contact .trial {
+    top: 69px;
+  }
 }
 .contact .terms {
   text-align: center;
