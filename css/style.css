@@ -371,18 +371,22 @@ section {
 }
 .features .row-wrapper h3 {
   text-align: center;
+  padding: 10px;
 }
 .features .row-wrapper p {
   text-align: center;
 }
 .features .features-image .earphones {
   position: absolute;
+  max-width: 100%;
+  max-height: 100%;
   top: -10px;
-  right: 135px;
+  right: 300px;
 }
 @media (max-width: 1200px) {
   .features .features-image .earphones {
     right: 60px;
+    max-width: 150px;
   }
 }
 @media (max-width: 768px) {
@@ -390,14 +394,22 @@ section {
     right: 50px;
   }
 }
+@media (max-width: 375px) {
+  .features .features-image .earphones {
+    right: -22px;
+  }
+}
 .features .features-image .penholder {
   position: absolute;
-  top: -30px;
+  top: -15px;
   left: 215px;
+  max-width: 100%;
+  max-height: 100%;
 }
 @media (max-width: 1200px) {
   .features .features-image .penholder {
     left: 0px;
+    max-width: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -408,16 +420,19 @@ section {
 .features .features-image .coffeecup {
   position: absolute;
   right: 90px;
-  bottom: -150px;
+  bottom: -135px;
+  max-width: 100%;
+  max-height: 100%;
 }
 @media (max-width: 1200px) {
   .features .features-image .coffeecup {
     right: 90px;
+    max-width: 200px;
   }
 }
 @media (max-width: 768px) {
   .features .features-image .coffeecup {
-    right: 30%;
+    right: 0%;
   }
 }
 
@@ -490,81 +505,6 @@ section {
 .members .firm-logo {
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.contact {
-  padding: 90px 0;
-  position: relative;
-}
-.contact .section-heading {
-  text-align: center;
-}
-.contact .section-heading h2 {
-  color: #ffffff;
-  margin-bottom: 100px;
-}
-.contact .contact-wrapper {
-  margin-bottom: 0;
-}
-.contact .form-input {
-  margin-left: 20px;
-}
-.contact .col-1-4 {
-  width: 20%;
-}
-@media (max-width: 1200px) {
-  .contact .col-1-4 {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  .contact .col-1-4 {
-    width: 60%;
-  }
-}
-@media (max-width: 375px) {
-  .contact .col-1-4 {
-    width: 70%;
-  }
-}
-.contact .trial {
-  position: absolute;
-  top: 48%;
-  right: 20%;
-  color: #ffffff;
-  padding-left: 30px;
-}
-@media (max-width: 1200px) {
-  .contact .trial {
-    top: 66%;
-    right: 5%;
-  }
-}
-@media (max-width: 768px) {
-  .contact .trial {
-    top: 70%;
-  }
-}
-.contact .trial::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 60%;
-  left: 3%;
-  background-image: url(../img/arrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 22;
-}
-.contact .terms {
-  text-align: center;
-}
-.contact .terms a {
-  color: #f6f5f3;
-}
-.contact .terms span {
-  text-decoration: underline;
 }
 
 .browser {
