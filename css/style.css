@@ -250,6 +250,7 @@ section {
   cursor: pointer;
   overflow: none;
   margin-bottom: 40px;
+  opacity: 0.7;
 }
 .site-header .showcase-wrapper .showcase-content .video-btn-img {
   width: 60px;
