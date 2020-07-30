@@ -424,22 +424,17 @@ section {
 			bottom: 0;
 			transform: rotate(56deg);
 			transform-origin: left bottom;
-			@media (max-width: 768px){
-				width: 110%;
-				height: 110%;
-				left: -55%;
-				bottom: 50%;
-				transform: rotate(90deg);
-				z-index: -1;
-			}
+			
 
 		}
 		@media (max-width: 768px){
-			background-color: transparent;
-			overflow: visible;
-
+			display: none;
+			visibility: hidden;
 		}
 	}
+	@media (max-width: 768px){
+			padding: 30px 0;
+		}
 }
 
 .features {

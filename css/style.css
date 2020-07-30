@@ -331,19 +331,14 @@ section {
   transform-origin: left bottom;
 }
 @media (max-width: 768px) {
-  .intro .section-image .rectangle {
-    width: 110%;
-    height: 110%;
-    left: -55%;
-    bottom: 50%;
-    transform: rotate(90deg);
-    z-index: -1;
+  .intro .section-image {
+    display: none;
+    visibility: hidden;
   }
 }
 @media (max-width: 768px) {
-  .intro .section-image {
-    background-color: transparent;
-    overflow: visible;
+  .intro {
+    padding: 30px 0;
   }
 }
 
