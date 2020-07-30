@@ -493,10 +493,13 @@ section {
 	        max-width: 150px;
 	}
 			@media (max-width: 768px) {
-	        right: 50px;
+	        right: 20px;
 	}
 		@media (max-width: 375px) {
 	        right: -22px;
+	}
+	@media (max-width: 300px) {
+	        display: none;
 	}
      	}   
 

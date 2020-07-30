@@ -392,12 +392,17 @@ section {
 }
 @media (max-width: 768px) {
   .features .features-image .earphones {
-    right: 50px;
+    right: 20px;
   }
 }
 @media (max-width: 375px) {
   .features .features-image .earphones {
     right: -22px;
+  }
+}
+@media (max-width: 300px) {
+  .features .features-image .earphones {
+    display: none;
   }
 }
 .features .features-image .penholder {
