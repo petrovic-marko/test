@@ -23,6 +23,7 @@ $breakpoint-large: 1024px;
 $breakpoint-medium: 768px;
 $breakpoint-small: 375px;
 
+
    
 
 // GENERAL STYLES
@@ -88,13 +89,17 @@ h2 {
 	// 	font-size: ;
 	// 	line-height: ;
 	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
 	 @media (max-width: $breakpoint-medium) {
 		font-size: 1.6rem ;
 	// 	line-height: ;
 	 }
 	   @media (max-width: $breakpoint-small) {
     	  font-size: 2rem;
-    	}
+     }
 }
 
 h3 {
@@ -107,11 +112,10 @@ h3 {
 	// 	font-size: ;
 	// 	line-height: ;
 	// }
-	 @media (max-width: $breakpoint-medium) {
+     @media (max-width: $breakpoint-medium) {
 		font-size: 1.6rem;
-	// 	line-height: ;
-	// }
-	   @media (max-width: breakpoint-small) {
+	 }
+	 @media (max-width: breakpoint-small) {
     	font: 1.8rem/2.5rem "Exo", sans-serif;
     	}
 }
@@ -164,12 +168,6 @@ a {
 p, ul, ol, dl, table, hr, pre, blockquote {
 	margin: 0 0 25px;
 	line-height: 2.6rem;
-}
-
-p {
-	 @media (max-width: 375px) {
-    	 font-size: 1.4rem;
-    	}
 }
 
 form {
@@ -252,7 +250,7 @@ section {
 	padding-left: 60px;
 	width: calc(100% / 3);
 	margin-bottom: 30px;
-	@media (max-width: $breakpoint-large) {
+	@media (max-width: 720px) {
 		width: 100%;
 	}
 }
@@ -261,10 +259,10 @@ section {
 	padding-left: 60px;
 	width: 25%;
 	margin-bottom: 30px;
-	@media (max-width: $breakpoint-large) {
+	@media (max-width: 1200px) {
 		width: 50%;
 	}
-	@media (max-width: $breakpoint-medium) {
+	@media (max-width: 720px) {
 		width: 100%;
 	}
 }
@@ -274,7 +272,7 @@ section {
 	width: 20%;
 	margin-bottom: 30px;
 
-	@media (max-width: $breakpoint-large) {
+	@media (max-width: 1024px) {
 		width: calc(100% / 3);		
 	}
 	@media  (max-width: 480px) {
@@ -288,9 +286,6 @@ section {
 		color: #ff6d6d;
 		text-transform: uppercase;
 		font-weight: bold;
-		@media (max-width: $breakpoint-small) {
-        font-size: 13px;
-    	}
 	}
 
 .btn {
@@ -406,14 +401,14 @@ section {
 	overflow: hidden;
 	.form-wrapper{
 	max-width: 70%;
-	@media (max-width: $breakpoint-medium){
+	@media (max-width: 768px){
 		max-width: 100%;
 	}
 
 	}
 	.text__wrapper{
 		padding-right: 170px;
-		@media (max-width: $breakpoint-medium){
+		@media (max-width: 768px){
 			padding: 0;
 		}
 	}
@@ -582,7 +577,7 @@ section {
 		}
 	}
 
- }
+ 
 
 	.design-image-rectangle{
 		// content: "";
@@ -615,9 +610,7 @@ section {
 	@media (max-width: 768px){
 		padding: 20px 0;
 	}
-
-	}
-
+}
 
 .members{
 	text-align: center;
@@ -657,7 +650,6 @@ section {
 		width: 70%;
 		padding-top: 100%;
 		margin: 0 auto;
-
 		@media (max-width: 375px) {
         width: 40%;
 		}
@@ -700,10 +692,6 @@ section {
 		right: 25px;
 		color: #ffffff;
 		padding-left: 30px;
-		@media (max-width: 375px){
-			right: 0px;
-			font-size: 14px;
-		}
 		&::after{
 			position: absolute;
 			content: "";
@@ -727,10 +715,9 @@ section {
 		text-align: center;
 		a{
 			color: #f6f5f3;
-		@media (max-width: 768px){
-          font-size: 14px;
+			@media (max-width: 768px){
+              font-size: 14px;
 		}
-			
 		}
 		span{
 			text-decoration: underline;
@@ -752,9 +739,8 @@ section {
 
     p {
     	padding: 10px 200px;
-      @media (max-width: 768px) {
+    @media (max-width: 768px) {
 	      padding: 10px 50px;
-
 	}
 	  @media (max-width: 375px) {
 	      padding: 0px;
@@ -814,4 +800,5 @@ section {
 			}
 		}
 		
+	}
 }
