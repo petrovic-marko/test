@@ -35,16 +35,16 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 62.5%;
-	// height: 100%;
 	scroll-behavior: smooth;
+	
 }
-
+ 
 body {
 	position: relative;
 	z-index: 1;
 	
 	
-	overflow-x: hidden; /* Hide horizontal scrollbar */
+	// overflow-x: hidden; /* Hide horizontal scrollbar */
 
 	// font
 	font-size: 1.6rem;
@@ -184,7 +184,7 @@ textarea {
 
 input[type="submit"] {
 	background-color: $clr-main;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 
 textarea {
@@ -193,7 +193,7 @@ textarea {
 
 section {
 	padding: 170px 0px;
-	overflow: hidden;
+	// overflow: hidden;
 	// @media (max-width: $breakpoint-large) {
 	// 	padding: ;
 	// }
@@ -503,11 +503,19 @@ section {
 
 .intro{
 	position: relative;
+	overflow: hidden;
 	.form-wrapper{
-	width: 70%;
+	max-width: 70%;
+	@media (max-width: 768px){
+		max-width: 100%;
+	}
+
 	}
 	.text__wrapper{
 		padding-right: 170px;
+		@media (max-width: 768px){
+			padding: 0;
+		}
 	}
 	
 	.lead-text{
@@ -528,17 +536,27 @@ section {
 		top: 0%;
 		left: 57%;
 		overflow: hidden;
+		background-color: #ececec;
 		.rectangle{
 			position: absolute;
-			height: 2000px;
-			width: 2000px;
+			height: 1000%;
+			width: 100%;
 			background-color: $clr-main-lighter-1;
 			left: 0;
 			bottom: 0;
 			transform: rotate(56deg);
 			transform-origin: left bottom;
+
+
+		}
+		@media (max-width: 768px){
+			display: none;
+			visibility: hidden;
 		}
 	}
+	@media (max-width: 768px){
+			padding: 30px 0;
+		}
 }
 
 .features {
@@ -576,9 +594,10 @@ section {
 
          h3 {
          text-align: center;
+         padding: 10px;
          }
 
-         	p {
+         p {
      		text-align: center;
      	}
      }
@@ -586,55 +605,98 @@ section {
      .features-image {
      	.earphones {
      		position: absolute;
+     		max-width: 100%;
+     		max-height: 100%;
      		top: -10px;
-     		right: 135px;
-     	}
+     		right: 300px;
+     		@media (max-width: 1200px) {
+	        right: 60px;
+	        max-width: 150px;
+	}
+			@media (max-width: 768px) {
+	        right: 20px;
+	}
+		@media (max-width: 375px) {
+	        right: -22px;
+	}
+	@media (max-width: 300px) {
+	        display: none;
+	}
+     	}   
 
      	.penholder {
      		position: absolute;
-     		top: -30px;
+     		top: -15px;
      		left: 215px;
+     		max-width: 100%;
+     		max-height: 100%;
+     		@media (max-width: 1200px) {
+		    left: 0px;
+		    max-width: 200px;
+	}
+			@media (max-width: 768px) {
+	        right: 60px;
+	}
      	}
      	.coffeecup {
      		position: absolute;
      		right: 90px;
-     		bottom: -150px;
+     		bottom: -135px;
+     		max-width: 100%;
+     		max-height: 100%;
+     		@media (max-width: 1200px) {
+		    right: 90px;
+		    max-width: 200px;
+	}
+			@media (max-width: 768px) {
+	        right: 0%;
+	}
      	}
      }
-
-}
-
+ }
 
 .design{
 	padding: 100px 0;
 	display: flex;
 	position: relative;
 	overflow: hidden;
+	
 	&-wrapper{
 		display: flex;
 		align-items: center;
+		@media (max-width: 768px){
+			flex-direction: column;
+		}
 	}
 	.design-image{
 		width: 100%;
 		min-height: 300px;
 		background-size: contain;
 		background-repeat: no-repeat;
-		position: relative;
+		// position: relative;
+		@media (max-width: 768px){
+			order: 2;
+		}
 	}
 
-
+ 
 
 	.design-image-rectangle{
 		// content: "";
 		position: absolute;
-		top: 0;
-		left: -213%;
-		width: 200%;
+		bottom: 0;
+		left: 0;
+		width: 48%;
 		height: 2000%;
 		background-color: $clr-main-lighter-1;
-		transform: rotate(-32deg);
-		transform-origin: top left;
+		transform: rotate(-37deg);
+		transform-origin: bottom right;
 		z-index: -1;
+		@media (max-width: 768px){
+			top:210%;
+			transform: rotate(-51deg);
+		}
+		
 	}
 	.design-content{
 		max-width: 50%;
@@ -642,11 +704,19 @@ section {
 		span{
 			color: $clr-main;
 		}
+		@media(max-width: 768px){
+			max-width: 100%;
+			padding-left: 0;
+		}
+	}
+	@media (max-width: 768px){
+		padding: 20px 0;
 	}
 }
 
 .members{
 	text-align: center;
+	padding: 50px 0;
 	.member-box{
 		.member-photo{
 			width: 75px;
@@ -674,14 +744,18 @@ section {
 		}
 	}
 	.firm-wrapper{
-		height: 100px;
 	}
 	.firm-logo{
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: contain;
+		width: 70%;
+		padding-top: 100%;
+		margin: 0 auto;
 	}
 	 
 }
+
 
 .contact{
 	padding: 90px 0;
@@ -694,18 +768,21 @@ section {
 		}
 	}
 	.contact-wrapper{
-		margin-bottom: 0;
+		text-align: center;
 	}
-	.form-input{
-		margin-left: 20px;
+	
+	.submit{
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
 	}
-	.col-1-4{
-		width: 20%;
+	.form-submit {
+		width: 244px;
 	}
 	.trial{
 		position:absolute;
-		top: 48%;
-		right: 20%;
+		top: -62px;
+		right: 25px;
 		color: #ffffff;
 		padding-left: 30px;
 		&::after{
@@ -718,10 +795,15 @@ section {
 			background-image: url(../img/arrow.png);
 			background-size: contain;
 			background-repeat: no-repeat;
-			z-index: 22;
-
+			@media (max-width: 1320px){
+				display: none;
+			}
+		}
+		@media (max-width: 1320px){
+			top: 66px;
 		}
 	}
+
 	.terms{
 		text-align: center;
 		a{
@@ -734,6 +816,7 @@ section {
 	}
 }
 
+
 .browser {
 	background-color: #f6f5f3;
 	position: relative;
@@ -744,9 +827,16 @@ section {
 
     p {
     	padding: 10px 200px;
+    @media (max-width: 768px) {
+	      padding: 10px 50px;
+	}
+	  @media (max-width: 375px) {
+	      padding: 0px;
+	}
+
     }
 
-
+<<<<<<< HEAD
 }
 
 
@@ -794,3 +884,59 @@ section {
 // 	}
 // }
 
+=======
+    img {
+    	max-width: 100%;
+    	max-height: 100%;
+    }
+}
+.footer{
+	// position: relative;
+	padding: 100px 0;
+	overflow: hidden;
+	.box{
+		// flex-direction: column;
+	}
+	.footer-wrapper{
+		position: relative;
+		width: 100%;
+		&::after{
+			content: "";
+			position: absolute;
+			top: -340%;
+			right: -100%;
+			width: 1000px;
+			height: 1000px;
+			background-color: $clr-main;
+			transform: rotate(-135deg);
+		}
+	}
+	.newsletter {
+		// position: relative;
+		.newsletter-input {
+			padding-right: 50px;
+			background-color: #f6f6f6;
+			// position: relative;
+			
+		}
+		.before{
+			position: relative;
+			width: 100%;
+			&::before{
+				content: "";
+				position: absolute;
+				left: 100%;
+				top: 50%;
+				width: 50px;
+				height: 100%;
+				background-image: url('../img/newsletter-icon.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				z-index: 1;
+				transform: translateY(-50%);
+			}
+		}
+		
+	}
+}
+>>>>>>> f7f41662d9f74913c92e4dcb385bf4ec6696d827

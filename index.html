@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/75cac14856.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -76,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section-image" style="background-color: #ececec">
+		<div class="section-image">
 			<div class="rectangle">
 				
 			</div>
@@ -112,7 +113,7 @@
     <div class="features-image">
     <img class="penholder" src="./img/penholder.svg">
     <img class="earphones" src="./img/earphones.svg">
-    <img class="coffeecup" src="./img/cup.svg">	
+    <img class="coffeecup" src="./img/coffee.png">	
     </div>
 	</section>
 
@@ -166,11 +167,21 @@
 				</div>
 			</div>
 			<div class="firm-wrapper row-wrapper">
-				<div class="firm-logo col-1-5" style="background-image: url(./img/partner-logo-1.png)"></div>
-				<div class="firm-logo col-1-5" style="background-image: url(./img/partner-logo-2.png)"></div>
-				<div class="firm-logo col-1-5" style="background-image: url(./img/partner-logo-3.png)"></div>
-				<div class="firm-logo col-1-5" style="background-image: url(./img/partner-logo-4.png)"></div>
-				<div class="firm-logo col-1-5" style="background-image: url(./img/partner-logo-5.png)"></div>
+				<div class="col-1-5">
+					<div class="firm-logo" style="background-image: url(./img/partner-logo-1.png)"></div>
+				</div>
+				<div class="col-1-5">
+					<div class="firm-logo" style="background-image: url(./img/partner-logo-2.png)"></div>
+				</div>
+				<div class="col-1-5">
+					<div class="firm-logo" style="background-image: url(./img/partner-logo-3.png)"></div>
+				</div>
+				<div class="col-1-5">
+					<div class="firm-logo" style="background-image: url(./img/partner-logo-4.png)"></div>
+				</div>
+				<div class="col-1-5">
+					<div class="firm-logo"  style="background-image: url(./img/partner-logo-5.png)"></div>
+				</div>
 			</div>
 		</div>
 
@@ -192,7 +203,8 @@
 	</section>
 
 
-	<!-- CONTACT -->
+
+
 	<section class="contact" style="background-color: #323969">
 		<div class="container">
 		<div class="section-heading">
@@ -200,21 +212,30 @@
 			<h2>Over 1000 designers are using ...</h2>
 		</div>
 		<form class="contact-wrapper row-wrapper">
-			<input type="text" class="col-1-4 form-input" placeholder="full name">
-			<input type="text" class="col-1-4 form-input" placeholder="your email">
-			<input type="text" class="col-1-4 form-input" placeholder="password">
-			<input type="submit" class="col-1-4 form-input" placeholder="submit">
+			<div class="col-1-4">
+				<input type="text" class="form-input" placeholder="full name">
+			</div>
+			<div class="col-1-4">
+				<input type="text" class="form-input" placeholder="your email">
+			</div>
+			<div class="col-1-4">
+				<input type="text" class="form-input" placeholder="password">
+			</div>
+			<div class="col-1-4 submit" >
+				<span class="trial">30 days free trial for all</span>
+				<input type="submit" class="form-input form-submit" placeholder="submit">
+			</div>
 		</form>
-		</div>
-			<span class="trial">30 days free trial for all</span>
-			<div class="terms">
+		<div class="terms">
 			<a href="#" >By Signing up you agree to our <span>terms & Services</span>.</a>
 			</div>
+		</div>
+			
 	</section>
 
 
-	<!-- FOOTER -->
 	<footer class="footer">
+<<<<<<< HEAD
 <!-- 			<div class="container">
 				<div class="footer-content">
 					<div class="row-wrapper small-gap">
@@ -232,6 +253,44 @@
 					</div>
 				</div>
 			</div> -->
+=======
+		<div class="container">
+			<div class="footer-wrapper row-wrapper">
+				<div class="col-1-4 description">
+					<h3 class="footer-heading box"><a href="#"><img src="./img/startex.png" alt=""></a></h3>
+					<p>
+						Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. 
+						USA &  CAN: 1-888-123-4567
+						Address: 34 Brokel Rd. NY
+					</p>
+				</div>
+				<div class="col-1-4 support box">
+					<h3 class="footer-heading">Support</h3>
+					<ul>
+						<li><a href="#">Help center</a></li>
+						<li><a href="#">Get started</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="col-1-4 about-us box">
+					<h3 class="footer-heading">About US</h3>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">terms of use</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<div class="col-1-4 newsletter box">
+					<h3 class="footer-heading">Get newsletter</h3>
+					<div class="before">
+						<input type="text" name="newsletter" class="newsletter-input" placeholder="email">
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+>>>>>>> f7f41662d9f74913c92e4dcb385bf4ec6696d827
 	</footer>
 
 
