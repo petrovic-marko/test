@@ -33,6 +33,11 @@ h1 {
   color: #282828;
   letter-spacing: 2px;
 }
+@media (max-width: 375px) {
+  h1 {
+    font: 3rem/7.5rem "Exo", sans-serif;
+  }
+}
 
 h2 {
   font: 4rem/5rem "Exo", sans-serif;
@@ -41,6 +46,16 @@ h2 {
   color: #282828;
   letter-spacing: 2px;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 375px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   font: 2.2rem/3.5rem "Exo", sans-serif;
@@ -48,6 +63,16 @@ h3 {
   font-weight: 500;
   color: #282828;
   letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: breakpoint-small) {
+  h3 {
+    font: 1.8rem/2.5rem "Exo", sans-serif;
+  }
 }
 
 h4 {
@@ -586,6 +611,11 @@ section {
     order: 2;
   }
 }
+@media (max-width: 375px) {
+  .design .design-image {
+    min-height: 220px;
+  }
+}
 .design .design-image-rectangle {
   background-color: #fb8686;
   position: absolute;
@@ -674,6 +704,11 @@ section {
   padding: 90px 0;
   position: relative;
 }
+@media (max-width: 375px) {
+  .contact {
+    padding: 30px 0;
+  }
+}
 .contact .section-heading {
   text-align: center;
 }
@@ -738,8 +773,18 @@ section {
 .contact .terms a {
   color: #f6f5f3;
 }
+@media (max-width: 768px) {
+  .contact .terms a {
+    font-size: 14px;
+  }
+}
 .contact .terms span {
   text-decoration: underline;
+}
+@media (max-width: 375px) {
+  .contact .terms span {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   .contact {
