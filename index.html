@@ -19,29 +19,43 @@
 				<!-- padding:70px 0; -->
 					<div class="container">
 						<div class="showcase-content">
-							<h1>There are no other platforms for you as like</h1>
-							<div id="video-btn" class="video-btn" onclick="videoFunction()">
+							<h1 class="main-heading">There are no other platforms for you as like</h1>
+							<div id="video-btn" class="video-btn" onclick="openVideo()">
 								<!-- <img src="img/video-btn.png" class="video-btn-img" alt=""> -->
 								<img src="img/play.png" class="video-btn-img" id="video-btn-play" alt="">
-								<img src="img/pause.png" class="video-btn-img" id="video-btn-pause" alt="">
+								<!-- <img src="img/pause.png" class="video-btn-img" id="video-btn-pause" alt=""> -->
 							</div>
-							<a href="#" class="btn btn-action">hello</a>
-							<p class="info">* No need to add card details</p>
+							<a href="#" id="showcase-btn-action" class="btn btn-action">hello</a>
+							<p id="showcase-info-text" class="info">* No need to add card details</p>
+
+							<!-- video -->
+							<div class="video-modal-wrapper" id="video-modal-wrapper">
+								<div class="grid-container">
+									<div class="iframe-wrap">
+										<!-- <iframe title="Hero Component Modal Video" class="modal-video" allow="autoplay" allowfullscreen="" frameborder="0" mozallowfullscreen="" src="https://player.vimeo.com/video/124062468&amp;byline=0&amp;controls=1&amp;title=0" webkitallowfullscreen=""></iframe> -->
+
+											<!-- <iframe src="https://player.vimeo.com/video/124062468"  class="modal-video" allow="autoplay" allowfullscreen="" frameborder="0" mozallowfullscreen="" ></iframe> -->
+
+											<iframe src="https://player.vimeo.com/video/124062468?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+									</div>
+								<button id="close-btn" class="close-btn" onclick="closeVideo()">&#215;</button>
+								</div>
+							</div>
 							
 						</div>
 					</div>
 				</div>
 
-				<div class="video-wrap">
+<!-- 				<div class="video-wrap">
 	        <video
 	          id="video-bg"
 	          src="video/video2.mp4"
 	          preload="auto"
-	          
+	          autoplay
 	          loop="loop"
 	          muted="muted"
 	        ></video>
-	      </div>
+	      </div> -->
 		
 	</header>
 
@@ -201,8 +215,26 @@
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<!--  -->
+<!-- 			<div class="container">
+				<div class="footer-content">
+					<div class="row-wrapper small-gap">
+						<div class="col-1-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sequi!</p></div>
+						<div class="col-1-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, exercitationem?</p></div>
+						<div class="col-1-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, velit.</p></div>
+						<div class="col-1-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tempore.</p></div>
+					</div>		
+				</div>
+			</div>
+			<div class="footer-rectangle">
+				<div class="footer-rectangle-inner">
+					<div class="footer-triangle">
+						<div class="footer-triangle-cover"></div>
+					</div>
+				</div>
+			</div> -->
 	</footer>
+
+
 
 
 	<script src="js/script.js"></script>
