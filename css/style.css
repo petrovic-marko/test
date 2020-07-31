@@ -48,12 +48,12 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 375px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -193,6 +193,16 @@ section {
   padding-left: 60px;
   width: 25%;
   margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .col-1-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .col-1-4 {
+    width: 100%;
+  }
 }
 
 .col-1-5 {
