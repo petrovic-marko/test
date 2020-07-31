@@ -21,6 +21,10 @@ body {
   font-weight: 500;
   font-family: "Exo", sans-serif;
 }
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
 
 h1 {
   font: 6rem/7.5rem "Exo", sans-serif;
@@ -190,16 +194,6 @@ section {
   width: 25%;
   margin-bottom: 30px;
 }
-@media (max-width: 1200px) {
-  .col-1-4 {
-    width: 50%;
-  }
-}
-@media (max-width: 720px) {
-  .col-1-4 {
-    width: 100%;
-  }
-}
 
 .col-1-5 {
   padding-left: 60px;
@@ -237,15 +231,23 @@ section {
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 .btn:active, .btn:hover, .btn:visited {
   color: #ffffff;
+}
+.btn:hover {
+  background-color: #f05757;
 }
 
 .site-header {
   min-height: 100vh;
   background-color: transparent;
   position: relative;
+  background-image: url(/img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .site-header .showcase-wrapper, .site-header .video-bg {
   position: absolute;
@@ -264,6 +266,33 @@ section {
   flex-direction: column;
   align-items: center;
 }
+.site-header .showcase-wrapper .showcase-content .main-heading {
+  -webkit-animation: fadein 2s ease-in;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s ease-in;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s ease-in;
+  /* Internet Explorer */
+  -o-animation: fadein 2s ease-in;
+  /* Opera < 12.1 */
+  animation: fadein 2s ease-in;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinbtn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
 .site-header .showcase-wrapper .showcase-content .video-btn {
   display: inline-block;
   width: auto;
@@ -272,26 +301,100 @@ section {
   cursor: pointer;
   overflow: none;
   margin-bottom: 40px;
+  transition: opacity 0.6s ease;
+  opacity: 0.3;
+  -webkit-animation: fadeinbtn 2s ease-in;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinbtn 2s ease-in;
+  /* Firefox < 16 */
+  -ms-animation: fadeinbtn 2s ease-in;
+  /* Internet Explorer */
+  -o-animation: fadeinbtn 2s ease-in;
+  /* Opera < 12.1 */
+  animation: fadeinbtn 2s ease-in;
+}
+.site-header .showcase-wrapper .showcase-content .video-btn:hover {
+  opacity: 0.8;
 }
 .site-header .showcase-wrapper .showcase-content .video-btn-img {
   width: 60px;
   height: 60px;
 }
+.site-header .showcase-wrapper .showcase-content .btn-action {
+  -webkit-animation: fadein 2s ease-in;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s ease-in;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s ease-in;
+  /* Internet Explorer */
+  -o-animation: fadein 2s ease-in;
+  /* Opera < 12.1 */
+  animation: fadein 2s ease-in;
+}
 .site-header .showcase-wrapper .showcase-content .info {
   font-size: 14px;
+  -webkit-animation: fadein 2s ease-in;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s ease-in;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s ease-in;
+  /* Internet Explorer */
+  -o-animation: fadein 2s ease-in;
+  /* Opera < 12.1 */
+  animation: fadein 2s ease-in;
 }
-.site-header .video-wrap {
-  position: absolute;
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper {
+  display: none;
+  z-index: 50;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  background-color: #000;
   height: 100vh;
-  overflow: hidden;
-  z-index: -2;
+  width: 100%;
 }
-.site-header .video-wrap video {
-  min-width: 100%;
-  min-height: 100%;
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 550px) {
+  .site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container {
+    padding: 100px 160px;
+  }
+}
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container .iframe-wrap {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+}
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container .iframe-wrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container .close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 80px;
+  line-height: 0px;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.site-header .showcase-wrapper .showcase-content .video-modal-wrapper .grid-container .close-btn:hover {
+  opacity: 0.9;
 }
 
 .video-wrap {
