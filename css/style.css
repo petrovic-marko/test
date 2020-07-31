@@ -1,9 +1,9 @@
 /* Error: expected "}".
  *     ,
- * 771 | }
+ * 817 | }
  *     |  ^
  *     '
- *   scss/input.scss 771:2  root stylesheet */
+ *   scss/input.scss 817:2  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 771 \2502  }\a     \2502   ^\a     \2575 \a   scss/input.scss 771:2  root stylesheet';
+  content: 'Error: expected "}".\a     \2577 \a 817 \2502  }\a     \2502   ^\a     \2575 \a   scss/input.scss 817:2  root stylesheet';
 }
