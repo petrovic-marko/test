@@ -248,12 +248,12 @@ section {
 	padding-left: 60px;
 	width: 25%;
 	margin-bottom: 30px;
-	// @media (max-width: 1200px) {
-	// 	width: 50%;
-	// }
-	// @media (max-width: 720px) {
-	// 	width: 100%;
-	// }
+	@media (max-width: 1200px) {
+		width: 50%;
+	}
+	@media (max-width: 720px) {
+		width: 100%;
+	}
 }
 
 .col-1-5 {
@@ -513,6 +513,11 @@ section {
 	}
 	.text__wrapper{
 		padding-right: 170px;
+		h2{
+			@media (max-width: 768px){
+				font-size: 3rem;
+			}
+		}
 		@media (max-width: 768px){
 			padding: 0;
 		}
@@ -673,7 +678,6 @@ section {
 		min-height: 300px;
 		background-size: contain;
 		background-repeat: no-repeat;
-		// position: relative;
 		@media (max-width: 768px){
 			order: 2;
 		}
@@ -682,20 +686,15 @@ section {
  
 
 	.design-image-rectangle{
-		// content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 48%;
-		height: 2000%;
 		background-color: $clr-main-lighter-1;
-		transform: rotate(-37deg);
-		transform-origin: bottom right;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50%;
 		z-index: -1;
-		@media (max-width: 768px){
-			top:210%;
-			transform: rotate(-51deg);
-		}
+		transform: skewX(45deg);
+		transform-origin: bottom;
 		
 	}
 	.design-content{
@@ -703,6 +702,11 @@ section {
 		padding-left: 60px;
 		span{
 			color: $clr-main;
+		}
+		h2{
+			@media (max-width: 768px){
+				font-size: 30px;
+			}
 		}
 		@media(max-width: 768px){
 			max-width: 100%;
@@ -752,6 +756,15 @@ section {
 		width: 70%;
 		padding-top: 100%;
 		margin: 0 auto;
+		@media (max-width: 768px) {
+			width: 55%;
+		padding-top: 75%;
+		}
+		@media (max-width: 480px){
+			width: 35%;
+			padding-top: 30%;
+		}
+		
 	}
 	 
 }
@@ -765,6 +778,9 @@ section {
 		h2{
 			color:#ffffff;
 			margin-bottom: 100px;
+			@media (max-width: 768px){
+				font-size: 30px;
+			}
 		}
 	}
 	.contact-wrapper{
@@ -778,11 +794,11 @@ section {
 	}
 	.form-submit {
 		width: 244px;
+		cursor: pointer;
 	}
 	.trial{
 		position:absolute;
 		top: -62px;
-		right: 25px;
 		color: #ffffff;
 		padding-left: 30px;
 		&::after{
@@ -802,6 +818,11 @@ section {
 		@media (max-width: 1320px){
 			top: 66px;
 		}
+		@media (max-width: 480px){
+			display: none;
+			visibility: hidden;
+			pointer-events: none;
+		}
 	}
 
 	.terms{
@@ -813,6 +834,9 @@ section {
 		span{
 			text-decoration: underline;
 		}
+	}
+	@media (max-width: 768px){
+		padding: 45px;
 	}
 }
 
@@ -839,52 +863,68 @@ section {
     }
 }
 .footer{
-	// position: relative;
+	display: flex;
 	padding: 100px 0;
 	overflow: hidden;
-	.box{
-		// flex-direction: column;
-	}
+	position: relative;
 	.footer-wrapper{
-		position: relative;
-		width: 100%;
-		&::after{
-			content: "";
-			position: absolute;
-			top: -340%;
-			right: -100%;
-			width: 1000px;
-			height: 1000px;
-			background-color: $clr-main;
-			transform: rotate(-135deg);
+		
+	}
+
+	.footer-links{
+		color: #979797;
+		&:hover{
+			text-decoration: underline;
 		}
 	}
 	.newsletter {
 		// position: relative;
+		.newsletter-form{
+			display: flex;
+		}
 		.newsletter-input {
-			padding-right: 50px;
 			background-color: #f6f6f6;
-			// position: relative;
-			
+			position: relative;
+			color: $clr-bg-blue;
+		}
+		.newsletter-submit{
+			background-image: url(../img/newsletter-icon.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			cursor: pointer;
+			background-color: transparent;
+			position: absolute;
+			height: 100%;
+
 		}
 		.before{
 			position: relative;
-			width: 100%;
-			&::before{
-				content: "";
-				position: absolute;
-				left: 100%;
-				top: 50%;
-				width: 50px;
-				height: 100%;
-				background-image: url('../img/newsletter-icon.png');
-				background-size: contain;
-				background-repeat: no-repeat;
-				z-index: 1;
-				transform: translateY(-50%);
-			}
 		}
-		
 	}
+	.social-icon-wrapper {
+		padding-left: 50px;
+	}
+	.social-icons{
+		.social-box{
+			max-width: 25%;
+		}
+
+	}
+	@media (max-width: 768px){
+		padding: 50px 0 25px 0;
+	}
+	&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 250px 250px 0;
+			border-color: transparent #ff8a8a transparent transparent;
+			z-index: -1;
+		}
 }
 

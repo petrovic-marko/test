@@ -169,6 +169,16 @@ section {
   width: 25%;
   margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+  .col-1-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .col-1-4 {
+    width: 100%;
+  }
+}
 
 .col-1-5 {
   padding-left: 60px;
@@ -403,6 +413,11 @@ section {
   padding-right: 170px;
 }
 @media (max-width: 768px) {
+  .intro .text__wrapper h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
   .intro .text__wrapper {
     padding: 0;
   }
@@ -572,21 +587,15 @@ section {
   }
 }
 .design .design-image-rectangle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 48%;
-  height: 2000%;
   background-color: #fb8686;
-  transform: rotate(-37deg);
-  transform-origin: bottom right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
   z-index: -1;
-}
-@media (max-width: 768px) {
-  .design .design-image-rectangle {
-    top: 210%;
-    transform: rotate(-51deg);
-  }
+  transform: skewX(45deg);
+  transform-origin: bottom;
 }
 .design .design-content {
   max-width: 50%;
@@ -594,6 +603,11 @@ section {
 }
 .design .design-content span {
   color: #ff6d6d;
+}
+@media (max-width: 768px) {
+  .design .design-content h2 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 768px) {
   .design .design-content {
@@ -643,6 +657,18 @@ section {
   padding-top: 100%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .members .firm-logo {
+    width: 55%;
+    padding-top: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .members .firm-logo {
+    width: 35%;
+    padding-top: 30%;
+  }
+}
 
 .contact {
   padding: 90px 0;
@@ -655,6 +681,11 @@ section {
   color: #ffffff;
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .contact .section-heading h2 {
+    font-size: 30px;
+  }
+}
 .contact .contact-wrapper {
   text-align: center;
 }
@@ -665,11 +696,11 @@ section {
 }
 .contact .form-submit {
   width: 244px;
+  cursor: pointer;
 }
 .contact .trial {
   position: absolute;
   top: -62px;
-  right: 25px;
   color: #ffffff;
   padding-left: 30px;
 }
@@ -694,6 +725,13 @@ section {
     top: 66px;
   }
 }
+@media (max-width: 480px) {
+  .contact .trial {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 .contact .terms {
   text-align: center;
 }
@@ -702,6 +740,11 @@ section {
 }
 .contact .terms span {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 45px;
+  }
 }
 
 .browser {
@@ -731,43 +774,60 @@ section {
 }
 
 .footer {
+  display: flex;
   padding: 100px 0;
   overflow: hidden;
-}
-.footer .footer-wrapper {
   position: relative;
-  width: 100%;
 }
-.footer .footer-wrapper::after {
-  content: "";
-  position: absolute;
-  top: -340%;
-  right: -100%;
-  width: 1000px;
-  height: 1000px;
-  background-color: #ff6d6d;
-  transform: rotate(-135deg);
+.footer .footer-links {
+  color: #979797;
+}
+.footer .footer-links:hover {
+  text-decoration: underline;
+}
+.footer .newsletter .newsletter-form {
+  display: flex;
 }
 .footer .newsletter .newsletter-input {
-  padding-right: 50px;
   background-color: #f6f6f6;
+  position: relative;
+  color: #323969;
+}
+.footer .newsletter .newsletter-submit {
+  background-image: url(../img/newsletter-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
 }
 .footer .newsletter .before {
   position: relative;
-  width: 100%;
 }
-.footer .newsletter .before::before {
+.footer .social-icon-wrapper {
+  padding-left: 50px;
+}
+.footer .social-icons .social-box {
+  max-width: 25%;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0 25px 0;
+  }
+}
+.footer::after {
   content: "";
   position: absolute;
-  left: 100%;
-  top: 50%;
-  width: 50px;
-  height: 100%;
-  background-image: url("../img/newsletter-icon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 1;
-  transform: translateY(-50%);
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 250px 250px 0;
+  border-color: transparent #ff8a8a transparent transparent;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
