@@ -48,12 +48,12 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 375px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
