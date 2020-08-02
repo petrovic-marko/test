@@ -532,6 +532,9 @@ section {
 				font-size: 3rem;
 			}
 		}
+		p{
+			color: #717171;
+		}
 		@media (max-width: 768px){
 			padding: 0;
 		}
@@ -618,6 +621,7 @@ section {
 
          p {
      		text-align: center;
+     		color: #717171;
      	}
      }
 
@@ -725,6 +729,9 @@ section {
 				font-size: 30px;
 			}
 		}
+		p{
+			color: #717171;
+		}
 		@media(max-width: 768px){
 			max-width: 100%;
 			padding-left: 0;
@@ -740,9 +747,12 @@ section {
 	padding: 50px 0;
 	.member-box{
 		.member-photo{
-			width: 75px;
+			width: 75px;		
 			height: 75px;
 			margin: 0 auto;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 		.member-name{
 			margin-top: 25px;
@@ -789,9 +799,7 @@ section {
 .contact{
 	padding: 90px 0;
 	position: relative;
-	@media (max-width: 375px){
-    padding: 30px 0;
-	}
+	
 	.section-heading{
 		text-align: center;
 		h2{
@@ -799,11 +807,16 @@ section {
 			margin-bottom: 100px;
 			@media (max-width: 768px){
 				font-size: 30px;
+				margin-bottom: 25px;
 			}
 		}
 	}
 	.contact-wrapper{
 		text-align: center;
+		// margin-left: -100px;
+		// .box{
+		// 	padding-left: 100px;
+		// }
 	}
 	
 	.submit{
@@ -819,7 +832,7 @@ section {
 		position:absolute;
 		top: -62px;
 		color: #ffffff;
-		padding-left: 30px;
+		padding-left: 25px;
 		&::after{
 			position: absolute;
 			content: "";
@@ -862,6 +875,9 @@ section {
 	@media (max-width: 768px){
 		padding: 45px;
 	}
+	@media (max-width: 375px){
+    padding: 30px 0;
+	}
 }
 
 
@@ -874,6 +890,7 @@ section {
     padding-top: 100px;
 	   p {
 	    	padding: 10px 200px;
+	    	color: #717171;
 	    @media (max-width: 768px) {
 		      padding: 10px 50px;
 		}
@@ -896,6 +913,9 @@ section {
 		.description{
 			a{
 				display: inline-block;
+			}
+			p{
+				color: #717171;
 			}
 		}
 		.description, .newsletter{
@@ -939,15 +959,11 @@ section {
 			position: relative;
 		}
 	}
-	.social-icon-wrapper {
-		padding-left: 50px;
-	}
-	.social-icons{
-		justify-content: flex-start;
-		.social-box{
-			// max-width: 25%;
+	.social-links{
+		.social-link{
+			display: inline-block;
+			margin: 0 0 20px 20px;
 		}
-
 	}
 	@media (max-width: 768px){
 		padding: 50px 0 25px 0;

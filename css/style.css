@@ -442,6 +442,9 @@ section {
     font-size: 3rem;
   }
 }
+.intro .text__wrapper p {
+  color: #717171;
+}
 @media (max-width: 768px) {
   .intro .text__wrapper {
     padding: 0;
@@ -519,6 +522,7 @@ section {
 }
 .features .row-wrapper p {
   text-align: center;
+  color: #717171;
 }
 .features .features-image .earphones {
   position: absolute;
@@ -639,6 +643,9 @@ section {
     font-size: 30px;
   }
 }
+.design .design-content p {
+  color: #717171;
+}
 @media (max-width: 768px) {
   .design .design-content {
     max-width: 100%;
@@ -659,6 +666,9 @@ section {
   width: 75px;
   height: 75px;
   margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .members .member-box .member-name {
   margin-top: 25px;
@@ -704,11 +714,6 @@ section {
   padding: 90px 0;
   position: relative;
 }
-@media (max-width: 375px) {
-  .contact {
-    padding: 30px 0;
-  }
-}
 .contact .section-heading {
   text-align: center;
 }
@@ -719,6 +724,7 @@ section {
 @media (max-width: 768px) {
   .contact .section-heading h2 {
     font-size: 30px;
+    margin-bottom: 25px;
   }
 }
 .contact .contact-wrapper {
@@ -737,7 +743,7 @@ section {
   position: absolute;
   top: -62px;
   color: #ffffff;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 .contact .trial::after {
   position: absolute;
@@ -791,6 +797,11 @@ section {
     padding: 45px;
   }
 }
+@media (max-width: 375px) {
+  .contact {
+    padding: 30px 0;
+  }
+}
 
 .browser {
   background-color: #f6f5f3;
@@ -802,6 +813,7 @@ section {
 }
 .browser p {
   padding: 10px 200px;
+  color: #717171;
 }
 @media (max-width: 768px) {
   .browser p {
@@ -829,6 +841,9 @@ section {
 }
 .footer .footer-wrapper .description a {
   display: inline-block;
+}
+.footer .footer-wrapper .description p {
+  color: #717171;
 }
 @media (max-width: 768px) {
   .footer .footer-wrapper .description, .footer .footer-wrapper .newsletter {
@@ -864,11 +879,9 @@ section {
 .footer .newsletter .before {
   position: relative;
 }
-.footer .social-icon-wrapper {
-  padding-left: 50px;
-}
-.footer .social-icons {
-  justify-content: flex-start;
+.footer .social-links .social-link {
+  display: inline-block;
+  margin: 0 0 20px 20px;
 }
 @media (max-width: 768px) {
   .footer {
