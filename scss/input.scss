@@ -847,21 +847,27 @@ section {
 		margin: 0 auto;
 	}
 	.form-submit {
-		width: 244px;
 		cursor: pointer;
+		display: block;
+		width: 100%
+	}
+	.form-input{
+		width: 100%;
 	}
 	.trial{
 		position:absolute;
 		top: -62px;
 		color: #ffffff;
 		padding-left: 25px;
+		width: 100%;
+		left: 10%;
 		&::after{
 			position: absolute;
 			content: "";
 			width: 100%;
 			height: 100%;
 			top: 60%;
-			left: 3%;
+			left: 10%;
 			background-image: url(../img/arrow.png);
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -871,6 +877,7 @@ section {
 		}
 		@media (max-width: 1320px){
 			top: 66px;
+			left: 3%;
 		}
 		@media (max-width: 480px){
 			display: none;
