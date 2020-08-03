@@ -987,29 +987,12 @@ section {
 		.before{
 			position: relative;
 			width: 100%;
-			&::before {
-				content: "";
-				position: absolute;
-				left: 100%;
-				top: 50%;
-				width: 50px;
-				height: 100%;
-				background-image: url('../img/newsletter-icon.png');
-				background-size: contain;
-				background-repeat: no-repeat;
-				z-index: 1;
-				transform: translateY(-50%); 
-			}
 	}
 	.social-links {
 		.social-link {
 			display: inline-block;
 			margin: 0 0 20px 20px;
 		}
-	}
-
-	@media (max-width: 768px){
-		padding: 50px 0 25px 0;
 	}
 
 	&::after {
@@ -1028,6 +1011,9 @@ section {
 				display: none;
 			}
 		}
+	}
+	@media (max-width: 768px){
+		padding: 50px 0;
 	}
 }
 
