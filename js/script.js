@@ -2,17 +2,23 @@ let videoOpen = false;
 let videoModalWrapper = document.getElementById('video-modal-wrapper');
 let body = document.querySelector('body');
 
+
+let iframe = document.getElementById('video');
+
 function openVideo() {
   videoModalWrapper.style.display = "block";
   videoOpen = true;
   body.classList.add('modal-open');
+  iframe['src'] = "https://player.vimeo.com/video/124062468?autoplay=1&loop=1&title=0&byline=0&portrait=0?api=1";
 }
 
 function closeVideo() {
   videoModalWrapper.style.display = "none";
   videoOpen = false;
   body.classList.remove('modal-open');
+  iframe['src'] = "";
 }
+
 
 
 
