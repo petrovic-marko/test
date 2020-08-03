@@ -918,6 +918,11 @@ section {
 				color: #717171;
 			}
 		}
+		.newsletter{
+			.newsletter-form{
+				margin-bottom: 25px; 
+			}
+		}
 		.description, .newsletter{
 			@media (max-width: 768px){
 				order: -1;
